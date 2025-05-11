@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Choose Route</title>
+  <style>
+    body {
+      background-color: #add8e6;
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+    select, button {
+      padding: 12px;
+      margin: 10px 0;
+      width: 260px;
+      border-radius: 10px;
+      border: 1px solid #555;
+    }
+    .next-button {
+      padding: 12px;
+      background-color: #03045e;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .next-button:hover {
+      background-color: #0077b6;
+    }
+    .company-name {
+      position: absolute;
+      bottom: 10px;
+      font-size: 14px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <form action="page5.html">
+    <select required>
+      <option value="" disabled selected>Choose your location</option>
+      <option>Beirut</option>
+      <option>Bekaa</option>
+      <option>Baalback</option>
+      <option>Chouf</option>
+      <option>Saida</option>
+      <option>Sour</option>
+      <option>Tripoli</option>
+    </select>
+
+    <select required>
+      <option value="" disabled selected>Choose your destination</option>
+      <option>Beirut</option>
+      <option>Bekaa</option>
+      <option>Baalback</option>
+      <option>Chouf</option>
+      <option>Saida</option>
+      <option>Sour</option>
+      <option>Tripoli</option>
+    </select>
+
+    <button type="submit" class="next-button">Next</button>
+  </form>
+  <div class="company-name">actcml.lb</div>
+</body>
+</html>
